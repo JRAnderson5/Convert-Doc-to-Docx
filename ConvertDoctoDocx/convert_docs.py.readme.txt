@@ -1,0 +1,27 @@
+I can provide you with a Python script that can convert .doc files to .docx files.
+
+This script utilizes the win32com.client library, which allows Python to interact with Microsoft Office applications. Please note that this script will only work on Windows operating systems and requires Microsoft Word to be installed on the machine where the script is run.
+
+Here is the Python script:
+DOC to DOCX Converter Script
+May 30, 9:07 PM
+
+How to use this script:
+Save the code: Save the code above as a Python file (e.g., convert_docs.py).
+Install pywin32: If you don't have it, install the pywin32 library by running:
+Bash
+
+pip install pywin32
+Prepare your folders:
+Create a folder named input_docs in the same directory as your script. Place all the .doc files you want to convert into this input_docs folder.
+The script will automatically create an output_docs folder to save the converted .docx files.
+Run the script: Open a command prompt or terminal, navigate to the directory where you saved the script, and run it using:
+Bash
+
+python convert_docs.py
+Important Notes:
+Windows Only: This script relies on win32com.client, which is a Windows-specific library for COM automation. It will not work on macOS or Linux.
+Microsoft Word Required: You must have a working installation of Microsoft Word on your Windows machine for this script to function, as it automates Word to perform the conversion.
+Error Handling: The script includes basic error handling for opening Word and individual file conversions.
+Dummy File: The if __name__ == "__main__": block includes code to create a dummy sample.doc file for initial testing. For real conversions, you'll need to place actual .doc files in the input_docs folder.
+This script provides a practical solution for batch converting .doc files to .docx on a Windows environment with Microsoft Word installed.
